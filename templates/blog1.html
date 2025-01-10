@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Blog 1 {% endblock title %}
+{% block main %}
+    <main>
+        <div class="container">
+            <div id="date">
+                <h1>January 9, 2025</h1>
+            </div>
+            <div id="img">
+                <img src="{%static 'images/writer_image.jpg'%}" alt="Image of Blog" width="100">
+                <span id="writer">By Ayush Prajapati</span>
+                
+            </div>
+            <div id="text">
+                <p>
+                    Today on January 9, 2025, I am writing my first ever blog on my website, Blogging and Coding. It is just a normal day in my life, where I go to college, come back and then go to the gym to work out. Although I do not yet have the body structure or shape of my choice, I still feel that the only thing I need to focus on is the consistency. If I continue and do not give up, I believe one day I will have something to be proud of.
+                </p>
+                <p>
+                    Another thing that I want to continue working on is gaining skills in IT fields. I am currently trying to build a website, all by myself from scratch(although not all by myself, I still use chatgpt and ask help to a few friends). I know HTML and CSS basics, but I have not  built anything that I could present to people and I hope that changes soon.
+                </p>
+                <p>
+                    So people, <b>what do you wanna talk about?</b>
+                </p>
+            </div>
+        </div>
+    </main>
+{% endblock main %}
+    

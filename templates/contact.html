@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Contact Page {% endblock title %}
+{% block main %}
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:ayushpjpt10@gmail.com">ayushpjpt10@gmail.com</a></p>
+            <p>Phone: +977 9808763121</p>
+            <p>Address: Madhyapur Thimi-5, Bhaktapur, Nepal </Address></p>
+        </div>
+        <form action="{% url 'contact' %}" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+{% endblock main %}

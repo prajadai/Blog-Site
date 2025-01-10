@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <title> {% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header>
+        <h1 id="website-title">Blooging and Coding</h1>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="{%url 'index'%}">Home</a></li>
+                <li class="nav-item"><a href="{%url 'contact'%}">Contact</a></li>
+                <li class="nav-item"><a href="{%url 'about'%}">About Me</a></li>
+                <li class="nav-item"><a href="{%url 'more'%}">More</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    {% block main %}{% endblock main %}
+
+    <footer>
+        <div id="foot">
+            <a href="https://www.instagram.com/prajadai/">
+                <img src="{% static 'images/insta.png' %}" alt="Insta Logo" width="20px">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100076514093556">
+                <img src="{% static 'images/facebook_logo.png' %}" alt="Facebook Logo" width="20px">
+            </a>
+            <a href="https://x.com/ayush7p">
+                <img src="{% static 'images/X.png' %}" alt="X Logo" width="20px">
+            </a>
+            <a href="https://github.com/prajadai">
+                <img src="{% static 'images/github.png' %}" alt="Github Logo" width="20px">
+            </a>
+            © 2025 Ayush Prajapati
+            <button><a href="#">⬆️</a> </button>
+        </div>
+    </footer>
+    
+</body>
+</html>
