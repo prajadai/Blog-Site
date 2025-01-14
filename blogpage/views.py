@@ -28,6 +28,9 @@ def blog3(request):
 def blog4(request):
     return render(request, 'blog4.html')
 
+def blog5(request):
+    return render(request, 'blog5.html')
+
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)

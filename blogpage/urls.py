@@ -13,4 +13,5 @@ urlpatterns = [
     path('index/blog-2', views.blog2, name="blog-2"),
     path('index/blog-3', views.blog3, name="blog-3"),
     path('index/blog-4', views.blog4, name="blog-4"),
+    path('index/blog-5', views.blog5, name="blog-5"),
 ]
