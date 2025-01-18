@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {%load static%}
 
-{% block title %}Home Page{% endblock title %}
+{% block title %}Blogging and Coding{% endblock title %}
 
 {% block main %}
     <div class="block">
@@ -9,7 +9,7 @@
             <div class="box">
                 <img src="{%static 'images/cmpunkface.png'%}" alt="January 9, 2025" width="20px">
                 <p>
-                    Today on January 9, 2025, I am writing my first ever blog on my website, Blogging and Coding. It is just a normal day in my life, where I go to college, come back and then go to the gym to work out....
+                    {{content1|truncatechars:300}}
                     <br>
                     <a href="{%url 'blog-1'%}">
                         <button type="button">Click Here</button> 
@@ -19,11 +19,11 @@
             <div class="box">
                 <img src="{%static 'images/cmpunkface.png'%}" alt="Austin 3:16" width="20px">
                 <p>
-                    You sit there, and you thump your Bible, and you say your prayers, and it didn't get you anywhere! Talk about your psalms, talk about John 3:16… Austin 3:16 says I just whipped your ass!
-                <br>
-                <a href="{%url 'blog-2'%}">
-                    <button type="button">Click Here</button>
-                </a>
+                    {{content2|truncatechars:300}}
+                    <br>
+                    <a href="{%url 'blog-2'%}">
+                        <button type="button">Click Here</button>
+                    </a>
                 </p>
             </div>
         </div>
@@ -31,21 +31,43 @@
             <div class="box">
                 <img src="{%static 'images/cmpunkface.png'%}" alt="CM Punk Pipebomb" width="20px">
                 <p>
-                    John Cena, while you lay there, hopefully as uncomfortable as you possibly can be, I want you to listen to me. I want you to digest this because before I leave in three weeks with your WWE Championship, I have a lot of things I want to get off my chest.
-                <br>
-                <a href="{%url 'blog-3'%}">
-                    <button type="button">Click Here</button>
-                </a>
+                    {{content3|truncatechars:300}}
+                    <br>
+                    <a href="{%url 'blog-3'%}">
+                        <button type="button">Click Here</button>
+                    </a>
                 </p>
             </div>
             <div class="box">
                 <img src="{%static 'images/cmpunkface.png'%}" alt="Hard Times Dusty Rhodes" width="20px">
                 <p>
-                    Hard times are when the auto workers are out of work, and they tell 'em to go home. And hard times are when a man has worked at a job for thirty years—thirty years!—and they give him a watch, kick him in the butt, and say, ‘Hey, a computer took your place, daddy!’ That's hard times! That's hard times.
-                <br>
-                <a href="{%url 'blog-4'%}">
-                    <button type="button">Click Here</button>
-                </a>
+                    {{content4|truncatechars:300}}
+                    <br>
+                    <a href="{%url 'blog-4'%}">
+                        <button type="button">Click Here</button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row-block">
+            <div class="box">
+                <img src="{%static 'images/cmpunkface.png'%}" alt="CM Punk Pipebomb" width="20px">
+                <p>
+                    {{content5|truncatechars:300}}
+                    <br>
+                    <a href="{%url 'blog-5'%}">
+                        <button type="button">Click Here</button>
+                    </a>
+                </p>
+            </div>
+            <div class="box">
+                <img src="{%static 'images/cmpunkface.png'%}" alt="Hard Times Dusty Rhodes" width="20px">
+                <p>
+                    {{content6|truncatechars:300}}
+                    <br>
+                    <a href="{%url 'blog-6'%}">
+                        <button type="button">Click Here</button>
+                    </a>
                 </p>
             </div>
         </div>
