@@ -1,0 +1,87 @@
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+.item-card {
+    background-color: #ffffff;
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 6px 0 12px -4px #0000000d;
+    /* margin: 1rem 0; */
+}
+
+.author-info-contain {
+    display: flex;
+    font-size: 0.7rem;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.author-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5a4a4;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+  
+.author-info b {
+    font-size: 1rem !important;
+}
+  
+.card-body {
+    padding: 1rem 0.75rem;
+}
+  
+.blog-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+  
+.blog-contain {
+    height: 12rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+    text-align: justify;
+}
+  
+.card-actions {
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+}
+  
+.read-more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: #006edb;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 0.75rem;
+    border: 2px solid #006edb;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+  
+.read-more-btn:hover {
+    background-color: #006edb;
+    color: #ffffff;
+}
+  
+.read-more-btn:hover svg {
+    fill: #ffffff;
+}

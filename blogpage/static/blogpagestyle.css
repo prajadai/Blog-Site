@@ -1,0 +1,16 @@
+#img-group{
+    margin: 0.6rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+#img-group img{
+    /* width: 15rem;
+    height: 15rem; */
+    object-fit: cover;
+    object-position: center;
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+}

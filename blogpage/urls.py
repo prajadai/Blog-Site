@@ -15,5 +15,6 @@ urlpatterns = [
     path('index/blog-4', views.blog4, name="blog-4"),
     path('index/blog-5', views.blog5, name="blog-5"),
     path('index/blog-6', views.blog6, name="blog-6"),
+    path('index/blog-7', views.blog7, name="blog-7"),
     # path('carousel', views.carousel_page, name="carousel"),
 ]

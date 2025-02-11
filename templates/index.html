@@ -1,75 +1,224 @@
-{% extends "base.html" %}
-{%load static%}
-
-{% block title %}Blogging and Coding{% endblock title %}
-
+{% extends "base.html" %} 
+{%load static%} 
+{% block title %}Blogging and Coding{%endblock title %} 
 {% block main %}
-    <div class="block">
-        <div class="row-block">
-            <div class="box">
-                <img src="{%static 'images/cmpunkface.png'%}" alt="January 9, 2025" width="20px">
-                <p>
-                    {{content1|truncatechars:300}}
-                    <br>
-                    <a href="{%url 'blog-1'%}">
-                        <button type="button">Click Here</button> 
-                    </a>
-                </p>
-            </div>
-            <div class="box">
-                <img src="{%static 'images/cmpunkface.png'%}" alt="Austin 3:16" width="20px">
-                <p>
-                    {{content2|truncatechars:300}}
-                    <br>
-                    <a href="{%url 'blog-2'%}">
-                        <button type="button">Click Here</button>
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="row-block">
-            <div class="box">
-                <img src="{%static 'images/cmpunkface.png'%}" alt="CM Punk Pipebomb" width="20px">
-                <p>
-                    {{content3|truncatechars:300}}
-                    <br>
-                    <a href="{%url 'blog-3'%}">
-                        <button type="button">Click Here</button>
-                    </a>
-                </p>
-            </div>
-            <div class="box">
-                <img src="{%static 'images/cmpunkface.png'%}" alt="Hard Times Dusty Rhodes" width="20px">
-                <p>
-                    {{content4|truncatechars:300}}
-                    <br>
-                    <a href="{%url 'blog-4'%}">
-                        <button type="button">Click Here</button>
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="row-block">
-            <div class="box">
-                <img src="{%static 'images/cmpunkface.png'%}" alt="CM Punk Pipebomb" width="20px">
-                <p>
-                    {{content5|truncatechars:300}}
-                    <br>
-                    <a href="{%url 'blog-5'%}">
-                        <button type="button">Click Here</button>
-                    </a>
-                </p>
-            </div>
-            <div class="box">
-                <img src="{%static 'images/cmpunkface.png'%}" alt="Hard Times Dusty Rhodes" width="20px">
-                <p>
-                    {{content6|truncatechars:300}}
-                    <br>
-                    <a href="{%url 'blog-6'%}">
-                        <button type="button">Click Here</button>
-                    </a>
-                </p>
-            </div>
-        </div>
+<section class="card-container">
+  <div class="item-card">
+    <div class="author-info-contain">
+      <span class="author-image">
+        <img
+          src="{%static 'images/cmpunkface.png'%}"
+          alt="January 9, 2025"
+          width="20px"
+        />
+      </span>
+      <span class="author-info">
+        <b>User1</b>
+        <p>Posted at 9th Jan, 2025</p>
+      </span>
     </div>
+    <div class="card-body">
+      <span class="blog-title">Blog-1</span>
+      <p class="blog-contain">
+        {{content1|truncatechars:300}}
+      </p>
+    </div>
+    <div class="card-actions">
+      <a href="{%url 'blog-1'%}" class="read-more-btn"
+        >Read More
+        <svg width="32px" height="32px" viewBox="0 -960 960 960" fill="#006edb">
+          <path
+            d="m504-446.67-47.33 47.34Q447-389.67 447-376q0 13.67 9.67 23.33Q466.33-343 480-343q13.67 0 23.33-9.67l104-104q10-10 10-23.33 0-13.33-10-23.33l-104-104Q493.67-617 480-617q-13.67 0-23.33 9.67Q447-597.67 447-584q0 13.67 9.67 23.33L504-513.33H360q-14.33 0-23.83 9.5-9.5 9.5-9.5 23.83 0 14.33 9.5 23.83 9.5 9.5 23.83 9.5h144Z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="item-card">
+    <div class="author-info-contain">
+      <span class="author-image">
+        <img
+          src="{%static 'images/cmpunkface.png'%}"
+          alt="January 9, 2025"
+          width="20px"
+        />
+      </span>
+      <span class="author-info">
+        <b>User1</b>
+        <p>Posted at 9th Jan, 2025</p>
+      </span>
+    </div>
+    <div class="card-body">
+      <span class="blog-title">Austin 3:16</span>
+      <p class="blog-contain">
+        {{content2|truncatechars:300}}
+      </p>
+    </div>
+    <div class="card-actions">
+      <a href="{%url 'blog-2'%}" class="read-more-btn"
+        >Read More
+        <svg width="32px" height="32px" viewBox="0 -960 960 960" fill="#006edb">
+          <path
+            d="m504-446.67-47.33 47.34Q447-389.67 447-376q0 13.67 9.67 23.33Q466.33-343 480-343q13.67 0 23.33-9.67l104-104q10-10 10-23.33 0-13.33-10-23.33l-104-104Q493.67-617 480-617q-13.67 0-23.33 9.67Q447-597.67 447-584q0 13.67 9.67 23.33L504-513.33H360q-14.33 0-23.83 9.5-9.5 9.5-9.5 23.83 0 14.33 9.5 23.83 9.5 9.5 23.83 9.5h144Z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="item-card">
+    <div class="author-info-contain">
+      <span class="author-image">
+        <img
+          src="{%static 'images/cmpunkface.png'%}"
+          alt="January 9, 2025"
+          width="20px"
+        />
+      </span>
+      <span class="author-info">
+        <b>User1</b>
+        <p>Posted at 9th Jan, 2025</p>
+      </span>
+    </div>
+    <div class="card-body">
+      <span class="blog-title">The PipeBomb</span>
+      <p class="blog-contain">
+        {{content3|truncatechars:300}}
+      </p>
+    </div>
+    <div class="card-actions">
+      <a href="{%url 'blog-3'%}" class="read-more-btn"
+        >Read More
+        <svg width="32px" height="32px" viewBox="0 -960 960 960" fill="#006edb">
+          <path
+            d="m504-446.67-47.33 47.34Q447-389.67 447-376q0 13.67 9.67 23.33Q466.33-343 480-343q13.67 0 23.33-9.67l104-104q10-10 10-23.33 0-13.33-10-23.33l-104-104Q493.67-617 480-617q-13.67 0-23.33 9.67Q447-597.67 447-584q0 13.67 9.67 23.33L504-513.33H360q-14.33 0-23.83 9.5-9.5 9.5-9.5 23.83 0 14.33 9.5 23.83 9.5 9.5 23.83 9.5h144Z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="item-card">
+    <div class="author-info-contain">
+      <span class="author-image">
+        <img
+          src="{%static 'images/cmpunkface.png'%}"
+          alt="January 9, 2025"
+          width="20px"
+        />
+      </span>
+      <span class="author-info">
+        <b>User1</b>
+        <p>Posted at 9th Jan, 2025</p>
+      </span>
+    </div>
+    <div class="card-body">
+      <span class="blog-title">Hard Times-Dusty Rhodes</span>
+      <p class="blog-contain">
+        {{content4|truncatechars:300}}
+      </p>
+    </div>
+    <div class="card-actions">
+      <a href="{%url 'blog-4'%}" class="read-more-btn"
+        >Read More
+        <svg width="32px" height="32px" viewBox="0 -960 960 960" fill="#006edb">
+          <path
+            d="m504-446.67-47.33 47.34Q447-389.67 447-376q0 13.67 9.67 23.33Q466.33-343 480-343q13.67 0 23.33-9.67l104-104q10-10 10-23.33 0-13.33-10-23.33l-104-104Q493.67-617 480-617q-13.67 0-23.33 9.67Q447-597.67 447-584q0 13.67 9.67 23.33L504-513.33H360q-14.33 0-23.83 9.5-9.5 9.5-9.5 23.83 0 14.33 9.5 23.83 9.5 9.5 23.83 9.5h144Z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="item-card">
+    <div class="author-info-contain">
+      <span class="author-image">
+        <img
+          src="{%static 'images/cmpunkface.png'%}"
+          alt="January 9, 2025"
+          width="20px"
+        />
+      </span>
+      <span class="author-info">
+        <b>User1</b>
+        <p>Posted at 14th Jan, 2025</p>
+      </span>
+    </div>
+    <div class="card-body">
+      <span class="blog-title">Health is Wealth</span>
+      <p class="blog-contain">
+        {{content5|truncatechars:300}}
+      </p>
+    </div>
+    <div class="card-actions">
+      <a href="{%url 'blog-5'%}" class="read-more-btn"
+        >Read More
+        <svg width="32px" height="32px" viewBox="0 -960 960 960" fill="#006edb">
+          <path
+            d="m504-446.67-47.33 47.34Q447-389.67 447-376q0 13.67 9.67 23.33Q466.33-343 480-343q13.67 0 23.33-9.67l104-104q10-10 10-23.33 0-13.33-10-23.33l-104-104Q493.67-617 480-617q-13.67 0-23.33 9.67Q447-597.67 447-584q0 13.67 9.67 23.33L504-513.33H360q-14.33 0-23.83 9.5-9.5 9.5-9.5 23.83 0 14.33 9.5 23.83 9.5 9.5 23.83 9.5h144Z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="item-card">
+    <div class="author-info-contain">
+      <span class="author-image">
+        <img
+          src="{%static 'images/cmpunkface.png'%}"
+          alt="January 9, 2025"
+          width="20px"
+        />
+      </span>
+      <span class="author-info">
+        <b>User1</b>
+        <p>Posted at 17th Jan, 2025</p>
+      </span>
+    </div>
+    <div class="card-body">
+      <span class="blog-title">Hat Trick Hero Amad</span>
+      <p class="blog-contain">
+        {{content6|truncatechars:300}}
+      </p>
+    </div>
+    <div class="card-actions">
+      <a href="{%url 'blog-6'%}" class="read-more-btn"
+        >Read More
+        <svg width="32px" height="32px" viewBox="0 -960 960 960" fill="#006edb">
+          <path
+            d="m504-446.67-47.33 47.34Q447-389.67 447-376q0 13.67 9.67 23.33Q466.33-343 480-343q13.67 0 23.33-9.67l104-104q10-10 10-23.33 0-13.33-10-23.33l-104-104Q493.67-617 480-617q-13.67 0-23.33 9.67Q447-597.67 447-584q0 13.67 9.67 23.33L504-513.33H360q-14.33 0-23.83 9.5-9.5 9.5-9.5 23.83 0 14.33 9.5 23.83 9.5 9.5 23.83 9.5h144Z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="item-card" id="card7">
+    <div class="author-info-contain">
+      <span class="author-image">
+        <img
+          src="{%static 'images/cmpunkface.png'%}"
+          alt="January 9, 2025"
+          width="20px"
+        />
+      </span>
+      <span class="author-info">
+        <b>User1</b>
+        <p>Posted at 11th Feb, 2025</p>
+      </span>
+    </div>
+    <div class="card-body">
+      <span class="blog-title">The Kumari of Bhaktapur</span>
+      <p class="blog-contain">
+        {{content7|truncatechars:300}}
+      </p>
+    </div>
+    <div class="card-actions">
+      <a href="{%url 'blog-7'%}" class="read-more-btn"
+        >Read More
+        <svg width="32px" height="32px" viewBox="0 -960 960 960" fill="#006edb">
+          <path
+            d="m504-446.67-47.33 47.34Q447-389.67 447-376q0 13.67 9.67 23.33Q466.33-343 480-343q13.67 0 23.33-9.67l104-104q10-10 10-23.33 0-13.33-10-23.33l-104-104Q493.67-617 480-617q-13.67 0-23.33 9.67Q447-597.67 447-584q0 13.67 9.67 23.33L504-513.33H360q-14.33 0-23.83 9.5-9.5 9.5-9.5 23.83 0 14.33 9.5 23.83 9.5 9.5 23.83 9.5h144Z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
 {% endblock main %}

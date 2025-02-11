@@ -58,13 +58,20 @@ def index(request):
         plain_text = strip_html_tags(html_content)
 
         content6 = "".join(plain_text.splitlines()[17])
+
+    with open('templates/blog7.html', encoding='utf-8') as f:
+        html_content = f.read()
+        plain_text = strip_html_tags(html_content)
+
+        content7 = "".join(plain_text.splitlines()[17])
     
     return render(request, 'index.html', {'content1':content1,
                                           'content2':content2,
                                           'content3':content3,
                                           'content4':content4,
                                           'content5':content5,
-                                          'content6':content6,})
+                                          'content6':content6,
+                                          'content7':content7,})
 
 def contact(request):
     return render(request, 'contact.html')
@@ -93,6 +100,8 @@ def blog5(request):
 def blog6(request):
     return render(request, 'blog6.html')
 
+def blog7(request):
+    return render(request, 'blog7.html')
 # def carousel_page(request):
 #     return render(request, 'carousel.html')
 
